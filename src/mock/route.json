@@ -1,0 +1,18 @@
+{
+    "/api/banner":"/banner",
+    "/api/serviceAccount/selectAccount\\?timestamp=:timestamp\\&id=:id":"/selectAccount",
+    "/api/publicFouce/selectList":"/selectList",
+    "/api/lableuser/allLable":"/allLable",
+    "/api/material/imagetext/index\\?timestamp=:timestamp\\&page=:page\\&pageSize=:pageSize":"/imagetext",
+    "/api/material/image/index\\?timestamp=:timestamp\\&page=:page\\&pageSize=:pageSize":"/image",
+    "/api/material/sound/index\\?timestamp=:timestamp\\&page=:page\\&pageSize=:pageSize":"/sound",
+    "/api/material/video/index\\?timestamp=:timestamp\\&page=:page\\&pageSize=:pageSize":"/video",
+    "/api/publicMenu/selectAllMenu\\?timestamp=:timestamp":"/selectAllMenu",
+    "/api/material/imagetext/info\\?timestamp=:timestamp\\&id=:id":"/imagetextInfo",
+    "/api/material/image/info\\?timestamp=:timestamp\\&id=:id":"/imageInfo",
+    "/api/serviceAccount/selectAll\\?timestamp=:timestamp\\&pageIndex=:pageIndex\\&pageSize=:pageSize":"/selectAll",
+    
+    "/api/analysis/user/getYesterDayKeyIndicator\\?timestamp=:timestamp\\&publicId=:publicId":"/getYesterDayKeyIndicator",
+    "/api/analysis/user/getChartByCondition\\?timestamp=:timestamp\\&startDataTime=:startDataTime\\&endDataTime=:endDataTime\\&type=:type\\&publicId=:publicId":"/getChartByCondition",
+    "/api/analysis/user/getListByCondition\\?timestamp=:timestamp\\&page=:page\\&pageSize=:pageSize\\&publicId=:publicId\\&startDataTime=:startDataTime\\&endDataTime=:endDataTime":"/getListByCondition"
+}
