@@ -3,7 +3,7 @@
 
 <div align="center">
 
-一个React+Antd服务号管理后台
+A service account management backend by React + Antd Design
 
 [![react](https://img.shields.io/badge/react-%5E16.13.1-orange)](https://github.com/facebook/react)
 [![antd](https://img.shields.io/badge/antd-^4.0.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
