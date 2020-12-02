@@ -6,12 +6,6 @@
 一个React+Antd服务号管理后台
 
 [![antd](https://img.shields.io/badge/antd-^4.0.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![umi](https://img.shields.io/badge/umi-^2.2.1-orange.svg?style=flat-square)](https://github.com/umijs/umi)
-[![GitHub issues](https://img.shields.io/github/issues/zuiidea/antd-admin.svg?style=flat-square)](https://github.com/zuiidea/antd-admin/issues)
-[![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-![Travis (.org)](https://img.shields.io/travis/zuiidea/antd-admin.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/zuiidea/antd-admin/pulls)
-[![Gitter](https://img.shields.io/gitter/room/antd-admin/antd-admin.svg)](https://gitter.im/antd-admin/antd-admin)
 
 </div>
 
@@ -35,17 +29,11 @@ English | [简体中文](./README-zh_CN.md)
 1. Clone project code.
 
 ```bash
-git clone https://github.com/zuiidea/antd-admin.git my-project
-cd my-project
+git clone https://github.com/AF-Git/react-antd-design.git
+cd react-antd-design
 ```
 
 2. Installation dependence.
-
-```bash
-yarn install
-```
-
-Or
 
 ```bash
 npm install
@@ -57,10 +45,13 @@ npm install
 npm run start
 ```
 
-4. After the startup is complete, open a browser and visit [http://localhost:7000](http://localhost:7000), If you need to change the startup port, you can configure it in the `.env` file.
+4. Start json-server.
 
+```bash
+npm run mock
+```
 
-> More instructions at [documentation](https://doc.antd-admin.zuiidea.com)。
+4. After the startup is complete, open a browser and visit [http://localhost:3000](http://localhost:3000), If you need to change the startup port, you can configure it in the `.env` file.
 
 
 ## Browsers support
