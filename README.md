@@ -5,7 +5,10 @@
 
 一个React+Antd服务号管理后台
 
+[![react](https://img.shields.io/badge/react-%5E16.13.1-orange)](https://github.com/facebook/react)
 [![antd](https://img.shields.io/badge/antd-^4.0.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![axios](https://img.shields.io/badge/axios-%5E0.20.0-green)](https://github.com/axios/axios)
+[![json-server](https://img.shields.io/badge/json--server-%5E0.16.3-blue)](https://github.com/typicode/json-server)
 
 </div>
 
