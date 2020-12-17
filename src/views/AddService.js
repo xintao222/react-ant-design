@@ -57,7 +57,6 @@ export default class AddService extends React.Component {
             formDatas.append("file", event.target.files[0]);
             https.fetchPost("/serviceAccount/uploadImg", formDatas)
             .then(data => {
-                this.setState({ isDisable: false });
                 if (data.code == 200) {
                     this.setState({
                         fileInfo: data.data,
@@ -190,8 +189,10 @@ export default class AddService extends React.Component {
                 uassName: values.uassName
             }
         };
+        this.setState({ isDisable: true });
         https.fetchPost("/serviceAccount/createAccountInfo", params)
         .then(data => {
+            this.setState({ isDisable: false });
             if (data.code == 200) {
                 message.success("创建成功");
                 this.props.history.push(`/servicelist`);

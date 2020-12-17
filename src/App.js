@@ -5,6 +5,7 @@ import Routes from './routes';
 import Aside from './components/Aside';
 import './utils';
 import './App.css';
+import "./styles/base.css";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 const { Header, Content } = Layout;
 

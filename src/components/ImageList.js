@@ -181,7 +181,6 @@ export default class ImageList extends React.Component {
                         display:'inline-block',
                         fontSize:16,
                         color: "rgb(154, 141, 141)",
-                        marginTop:15,
                         marginLeft:15
                         }}>上传文件大小不超过60KB,支持jpg，png等图片文件</span>
                     

@@ -36,7 +36,7 @@ export default class ImageTextSelect extends React.Component {
     };
     getList = (index) => {
         let params = {
-            // searchContext: '',
+            searchContext: '',
             page: index-1,
             pageSize: this.state.pageSize
         };

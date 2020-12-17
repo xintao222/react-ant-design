@@ -19,6 +19,7 @@ export default class CustomizeMenu extends React.Component {
             menuType: 0,
             menuUrl: ''
         },
+        isDisable: false,
     }
 
     onRadioChange = e => {
@@ -127,8 +128,7 @@ export default class CustomizeMenu extends React.Component {
     };
 
     submit = () => {
-        // console.log(this.state.sonMenu)
-        // console.log(this.refs.tabsBox.state)
+
         let publishStatus = false;
         let item = this.state.sonMenu;
         let menuType = this.state.sonMenu.menuType;
@@ -170,14 +170,12 @@ export default class CustomizeMenu extends React.Component {
             menuStatu: 0,
             needauthorization: 1,
             menuName: item.menuName,
-
             menuType: item.menuType, //0/1/2=素材/链接/无
             materialId: materialId,
             materiaType: materiaType,
             menuClicktype: menuClicktype,
             menuClicktext: menuClicktext,
             menuUrl: menuUrl, //链接-链接
-            
             parId: item.parId, //父id
             menuId: item.menuId && item.menuId >= 0 ? item.menuId : null
         };
@@ -187,8 +185,10 @@ export default class CustomizeMenu extends React.Component {
             publishStatus == true &&
             params.menuName != ""
         ){
+            this.setState({ isDisable: true });
             https.fetchPost("/publicMenu/addMenu", params)
             .then(data => {
+                this.setState({ isDisable: false });
                 if (data.code === 200){
                     message.success( item.menuId && item.menuId >= 0? "修改成功!" : "添加成功!");
                     setTimeout(()=>{
@@ -209,7 +209,7 @@ export default class CustomizeMenu extends React.Component {
     
     render() {
         const { 
-            imgIop,imgBot,list,parentIndex,sonIndex,sonMenu
+            imgIop,imgBot,list,parentIndex,sonIndex,sonMenu,isDisable
         } = this.state
         return (
             <Card title="自定义菜单" className="add" bordered={false}>
@@ -319,7 +319,7 @@ export default class CustomizeMenu extends React.Component {
                     </Col>
                 </Row>
                 <div style={{fontSize:16,marginTop:20,paddingLeft:340}}>
-                    <Button type="primary" onClick={this.submit} >保存</Button>
+                    <Button type="primary" disabled={isDisable} onClick={this.submit} >保存</Button>
                 </div>
             </Card>
         )

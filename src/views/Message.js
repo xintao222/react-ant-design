@@ -199,9 +199,6 @@ export default class Message extends React.Component {
 
     submit = () => {
         
-        //开始可以点击
-        this.setState({ disabled: true });
-        
         let params = {
             groupids: [0],
             isAll: this.state.isAll,
@@ -214,16 +211,17 @@ export default class Message extends React.Component {
 
         if (params.materialId == 0 && params.msg_text_value == "") {
             message.info("发送失败，请选择素材或输入文本");
-            this.setState({ disabled: false });
             return false
         } else if (params.isAll == 0 && params.lables.length == 0) {
             message.info("发送失败，请选择群发对象");
-            this.setState({ disabled: false });
             return false
         }
-        //console.log(params)
+        
+        //开始可以点击
+        this.setState({ disabled: true });
         https.fetchPost("/pushmessage/sendMessage", params)
         .then(data => {
+            this.setState({ disabled: false });
             if (data.code === 200){
                 message.success("发送成功");
                 setTimeout(()=>{

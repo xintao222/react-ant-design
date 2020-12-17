@@ -1,7 +1,6 @@
 import React from 'react';
 import { Table,Space,Button,Modal,Input,message } from 'antd';
 import https from "../api/https";
-import "../styles/base.css";
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import VideoPlayer from '../components/VideoPlayer'
 

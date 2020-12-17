@@ -245,7 +245,7 @@ export default class AddImageText extends React.Component {
     
     render() {
         const { 
-            imagetxtlist,images,showImageSelect,showVideoSelect
+            imagetxtlist,images,showImageSelect,showVideoSelect,disabled
         } = this.state
         return (
             <Card title="新建图文消息" className="add" bordered={false}>
@@ -343,6 +343,7 @@ export default class AddImageText extends React.Component {
                         <Input onChange={this.linkChange} value={images.link} placeholder="" />
                         <div style={{fontSize:16,marginTop:25}}>
                             <Button type="primary"
+                                disabled={disabled}
                                 onClick={this.submit}
                             >保存</Button>
                         </div>

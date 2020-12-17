@@ -57,7 +57,6 @@ export default class EditService extends React.Component {
             formDatas.append("file", event.target.files[0]);
             https.fetchPost("/serviceAccount/uploadImg", formDatas)
             .then(data => {
-                this.setState({ isDisable: false });
                 if (data.code == 200) {
                     this.setState({
                         fileInfo: data.data,
@@ -196,10 +195,10 @@ export default class EditService extends React.Component {
                 uassName: values.uassName
             }
         };
-        console.log(params)
-        //return
+        this.setState({ isDisable: true });
         https.fetchPut("/serviceAccount/updateAccount", params)
         .then(data => {
+            this.setState({ isDisable: false });
             if (data.code == 200) {
                 message.success("修改成功");
                 this.props.history.push(`/servicelist`);

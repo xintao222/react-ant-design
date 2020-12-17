@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table,Space,Button,Input } from 'antd';
 import https from "../api/https";
+import "../styles/message.css";
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 const { Search } = Input;
 

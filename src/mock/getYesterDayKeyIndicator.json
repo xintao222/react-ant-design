@@ -1,1 +1,27 @@
-{"mesg":"请求成功","code":200,"data":{"id":null,"publicId":0,"fouceDate":null,"fouceCount":0,"fouceDailyCount":0,"fouceWeekCount":0,"fouceMonthlyCount":0,"unfouceCount":0,"unfouceDailyCount":0,"unfouceWeekCount":0,"unfouceMonthlyCount":0,"fouceUnique":0,"fouceDailyUnique":0,"fouceWeekUnique":0,"fouceMonthlyUnique":0,"unfouceUnique":0,"totalCount":0,"totalDailyCount":0,"totalWeekCount":0,"totalMonthlyCount":0},"success":true}
+{
+    "mesg": "请求成功",
+    "code": 200,
+    "data": {
+        "id": null,
+        "publicId": 0,
+        "fouceDate": null,
+        "fouceCount": 15,
+        "fouceDailyCount": 13,
+        "fouceWeekCount": 30,
+        "fouceMonthlyCount": 53,
+        "unfouceCount": 33,
+        "unfouceDailyCount": 32,
+        "unfouceWeekCount": 12,
+        "unfouceMonthlyCount": 56,
+        "fouceUnique": 12,
+        "fouceDailyUnique": 20,
+        "fouceWeekUnique": 62,
+        "fouceMonthlyUnique": 80,
+        "unfouceUnique": 40,
+        "totalCount": 120,
+        "totalDailyCount": 36,
+        "totalWeekCount": 45,
+        "totalMonthlyCount": 72
+    },
+    "success": true
+}

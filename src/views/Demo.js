@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card } from 'antd';
-import https from "../api/https";
 import "../styles/message.css";
 
 export default class Demo extends React.Component {
@@ -10,24 +9,15 @@ export default class Demo extends React.Component {
     };
 
     componentWillMount() {
-        
-        https.fetchGet("/serviceAccount/selectAccount", {
-            id: 600000000026
-        })
-        .then(data => {
-            if (data.code === 200) {
-                console.log(data)
+        let time = 0;
+        let tt = setInterval(() => {
+            time = this.state.time--;
+            console.log(time)
+            if(time==0){
+                console.log('清除Session')
+                clearInterval(tt);
             }
-        })
-        
-        https.fetchPost("/banner", {
-            id: 600000000026
-        })
-        .then(data => {
-            if (data.code === 200) {
-                console.log(data)
-            }
-        })
+        }, 1000);
     }
 
     render() {

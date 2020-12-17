@@ -5,15 +5,15 @@
 
 A service account management backend by React + Antd Design
 
-[![react](https://img.shields.io/badge/react-%5E16.13.1-orange)](https://github.com/facebook/react)
-[![antd](https://img.shields.io/badge/antd-^4.0.0-blue.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![axios](https://img.shields.io/badge/axios-%5E0.20.0-green)](https://github.com/axios/axios)
-[![json-server](https://img.shields.io/badge/json--server-%5E0.16.3-blue)](https://github.com/typicode/json-server)
+[![react](https://img.shields.io/badge/react-^16.13.1-orange)](https://github.com/facebook/react)
+[![antd](https://img.shields.io/badge/antd-^4.0.0-blue)](https://github.com/ant-design/ant-design)
+[![axios](https://img.shields.io/badge/axios-^0.20.0-green)](https://github.com/axios/axios)
+[![mockjs](https://img.shields.io/badge/mockjs-^1.1.0-lightgrey)](https://github.com/typicode/json-server)
 
 </div>
 
-- Preview - [https://antd-admin.zuiidea.com](https://antd-admin.zuiidea.com)
-- Documentation - [https://doc.antd-admin.zuiidea.com](https://doc.antd-admin.zuiidea.com)
+- Preview - [http://www.gaoxc.com/react/#/information](http://www.gaoxc.com/react/#/information)
+- Documentation - [https://github.com/AF-Git/react-ant-design](https://github.com/AF-Git/react-ant-design)
 - FAQ - [https://doc.antd-admin.zuiidea.com/#/faq](https://doc.antd-admin.zuiidea.com/#/faq)
 - ChangeLog - [https://doc.antd-admin.zuiidea.com/#/change-log](https://doc.antd-admin.zuiidea.com/#/change-log)
 
@@ -46,12 +46,6 @@ npm install
 
 ```bash
 npm run start
-```
-
-4. Start json-server.
-
-```bash
-npm run mock
 ```
 
 4. After the startup is complete, open a browser and visit [http://localhost:3000](http://localhost:3000), If you need to change the startup port, you can configure it in the `.env` file.

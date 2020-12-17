@@ -39,38 +39,19 @@ axios.interceptors.response.use((res) => {
 
 //返回一个Promise(发送post请求)
 export function fetchPost(url, params) {
-
-    if(window.ApiUrl == "http://localhost:9000/api"){
-        return new Promise((resolve, reject) => {
-            axios.get(url, {
-                params: params,
-                headers: header
+    // console.log('调用接口时需要在header中设置的token值:',token);
+    return new Promise((resolve, reject) => {
+        // axios.post(url, params)
+        axios.post(url, params, { headers: header }) //添加header
+            .then(response => {
+                resolve(response);
+            }, err => {
+                reject(err);
             })
-                .then(response => {
-                    resolve(response)
-                }, err => {
-                    reject(err)
-                })
-                .catch((error) => {
-                    reject(error)
-                })
-        })
-    }else{
-        // console.log('调用接口时需要在header中设置的token值:',token);
-        return new Promise((resolve, reject) => {
-            // axios.post(url, params)
-            axios.post(url, params, { headers: header }) //添加header
-                .then(response => {
-                    resolve(response);
-                }, err => {
-                    reject(err);
-                })
-                .catch((error) => {
-                    reject(error)
-                })
-        })
-    }
-    
+            .catch((error) => {
+                reject(error)
+            })
+    })
 }
 ////返回一个Promise(发送get请求)
 export function fetchGet(url, param) {
