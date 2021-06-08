@@ -5,7 +5,7 @@ import 'react-app-polyfill/ie11';
 import './index.css';
 import 'antd/dist/antd.css';
 import Page from './Page';
-//import './mock';
+import './mock';
 import * as serviceWorker from './serviceWorker';
 require('es6-symbol/implement');
 ReactDOM.render(
